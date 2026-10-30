@@ -1,4 +1,4 @@
-"""Тексты типа 4 (вариант 8): 10 статей об искусстве и 10 о спорте."""
+
 
 ART = [
     """The city museum opened a major exhibition this week devoted to the Dutch golden age, and the show has

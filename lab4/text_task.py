@@ -1,4 +1,4 @@
-"""Задание 4 (вариант 8): кластеризация текстов (искусство / спорт)."""
+
 import re
 import numpy as np
 import matplotlib
