@@ -1,0 +1,49 @@
+
+--- base: TF-IDF 20x225 -> SVD-8 ---
+bandwidth   k  silhouette  mutual_info    
+    0.934   2       0.176        0.693
+    1.004   1         nan        0.000
+    1.061   1         nan        0.000
+    1.107   1         nan        0.000
+    1.161   1         nan        0.000
+    1.189   1         nan        0.000
+
+выбран bandwidth = 0.934
+     метод   k  silhouette  mutual_info    
+ MeanShift   2       0.176        0.693
+    KMeans   2       0.176        0.693
+
+MeanShift: размеры [10, 10], искусство/спорт по кластерам [(10, 0), (0, 10)]
+  кластер 0: exhibition, gallery, display, room, years, museum, visitors, photography
+  кластер 1: game, coach, team, club, second, decided, players, said
+
+KMeans: размеры [10, 10], искусство/спорт по кластерам [(10, 0), (0, 10)]
+  кластер 0: exhibition, gallery, display, room, years, museum, visitors, photography
+  кластер 1: game, coach, team, club, second, decided, players, said
+
+--- improved: TF-IDF 20x216 -> SVD-8 ---
+bandwidth   k  silhouette  mutual_info    
+    0.895   2       0.202        0.693
+    0.981   1         nan        0.000
+    1.042   1         nan        0.000
+    1.103   1         nan        0.000
+    1.147   1         nan        0.000
+    1.200   1         nan        0.000
+
+выбран bandwidth = 0.895
+     метод   k  silhouette  mutual_info    
+ MeanShift   2       0.202        0.693
+    KMeans   2       0.202        0.693
+
+MeanShift: размеры [10, 10], искусство/спорт по кластерам [(0, 10), (10, 0)]
+  кластер 0: match, coach, team, club, second, decided, players, said
+  кластер 1: exhibition, gallery, room, years, museum, visitors, photography, installation
+
+KMeans: размеры [10, 10], искусство/спорт по кластерам [(0, 10), (10, 0)]
+  кластер 0: match, coach, team, club, second, decided, players, said
+  кластер 1: exhibition, gallery, room, years, museum, visitors, photography, installation
+
+=== Сравнение (silhouette / mutual_info) ===
+     метод               было              стало
+ MeanShift    0.176 /  0.693        0.202 /  0.693
+    KMeans    0.176 /  0.693        0.202 /  0.693
