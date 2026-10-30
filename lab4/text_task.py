@@ -1,4 +1,5 @@
 
+# вариант 8: 10 статей об искусстве + 10 о спорте
 import re
 import numpy as np
 import matplotlib

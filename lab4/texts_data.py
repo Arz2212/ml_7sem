@@ -1,5 +1,6 @@
 
 
+# корпус типа 4 (вариант 8)
 ART = [
     """The city museum opened a major exhibition this week devoted to the Dutch golden age, and the show has
 already broken attendance records. More than two hundred canvases, drawings and prints arrived from twelve

@@ -1,3 +1,4 @@
+# вариант 8: точки типов 1 и 3, MeanShift, silhouette + mutual_info
 import numpy as np
 import matplotlib
 matplotlib.use("Agg")
